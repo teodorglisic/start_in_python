@@ -3,6 +3,7 @@ def check_palindrome(word: str) -> bool:
     inner_res = True
 
     word = word.upper()
+    word = word.replace(" ", "")
 
     if len(word) % 2 == 0:
         a = len(word) / 2
